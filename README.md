@@ -8,6 +8,6 @@ This is my professional portfolio. It contains original HTML and CSS code. In th
 -  Live page <https://bertokeys1.github.io/HW2Portfolio/>
 
 
- ![](assets\images\screenshot1.png)
+ ![image](screenshot1.png)
 
- ![](assets\images\screenshot2.png)
+ ![image](screenshot2.png)
