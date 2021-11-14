@@ -7,5 +7,6 @@ This is my professional portfolio. It contains original HTML and CSS code. In th
 -  Repo <https://github.com/Bertokeys1/HW2Portfolio>
 -  Live page <https://bertokeys1.github.io/HW2Portfolio/>
 
-![](assets\images\screenshot1.png)
-![](assets\images\screenshot2.png)
+
+ ![](assets\images\screenshot1.png)
+ ![](assets\images\screenshot2.png)
