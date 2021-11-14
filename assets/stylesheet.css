@@ -8,14 +8,16 @@
   }
   
   header {
-    background-color: rgb(77, 111, 150);
+    background-color: #4d6f96;
   }
   
+  /* box with author name */
   header h1 {
       display: inline-block;
     font-size: 30px;
   }
   
+  /* box parent containing sections of page */
   header nav {
       padding-top: 15px;
       margin-right: 20px;
@@ -25,17 +27,21 @@
       font-size: 20px;
   }
   
+  /* box child containing text for the section links */
   header nav a {
     color: #13293d;
     padding: 14px 20px;
     text-decoration: none;
     text-align: right;
   }
+
+  /* box parent containing all page sections */
   main {
     display: flex;
     flex-wrap: wrap;
   }
 
+  /* left side box parent */
   aside {
     flex: 1;
     background-color: #022558;
@@ -44,13 +50,16 @@
     color: #ffffff;
   }
 
+  /* image inside aside box */
   aside img {
     width: 100%;
     
   }
 
+  /* background image size, between header and main */
   .hero {
     height:300px;
+    width: 100%;
     background-image: url(https://images.unsplash.com/photo-1537884631310-061c11097503?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,7 +69,8 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding: 0px 20px 20px 0;
-}
+} 
+  /* box parent for work section */
   .projects {
     flex: 4;
     background-color: #597d8d;
@@ -69,8 +79,49 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  /* box child for "work" section */
+  .title {
+    text-align: center;
+    font-size: 35px;
+    background-color: #4d6f96;
+    border-style: solid;
+    border-width: 1px;
+    margin-inline-start: 130px;
+    margin-inline-end: 130px;
+    margin-block-start: 10px;
+    margin-bottom: 1px;
+    width: 65%;
+    flex-grow: 4;
+  }
 
+  /* box child containing authors work */
   .container {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+    text-align: center;
+    margin-block-end: 5px;
+  }
+  
+  /* box child containing name of authors project */
+  .container header {
+    padding: 20px;
+  }
+  
+  /* box child containing link to github repo of work */
+  .container p {
+    text-align: center;
+  }
+  
+  /* box child image size*/
+  .container img {
+    width: 100%;
+  }
+
+  /* box child/text size for contacts section */
+  .contacts {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -79,25 +130,7 @@
     text-align: center;
   }
   
-  .container header {
-    padding: 20px;
-  }
-  
-  .container p {
-    text-align: center;
-  }
-  
-  .container img {
-    width: 100%;
-  }
-  .contacts {
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-    text-align: center;
-  }
-  
+  /* box resize(flex) when page size changes or is used on device with different display size */
   @media screen and (max-width: 768px) {
     main,
     nav {
